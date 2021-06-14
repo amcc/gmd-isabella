@@ -98,7 +98,6 @@ function setup() {
 function draw() {
   image(vid, 0, 0, width, height);
   background(255, 200, 200, aValueFromTheFace * 255);
-  console.log(expressions);
   filter(GRAY);
 
   let mainExpression = Object.keys(expressions).reduce(function (a, b) {
