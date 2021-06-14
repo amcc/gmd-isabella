@@ -11,11 +11,11 @@ let expressions = {
   surprised: 0,
 };
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri("./models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("./models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("./models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("./models"),
-  faceapi.nets.ageGenderNet.loadFromUri("/models"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("https://amcc.github.io/gmd-isabella/models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("https://amcc.github.io/gmd-isabella/models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("https://amcc.github.io/gmd-isabella/models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("https://amcc.github.io/gmd-isabella/models"),
+  faceapi.nets.ageGenderNet.loadFromUri("https://amcc.github.io/gmd-isabella/models"),
 ]).then(startVideo);
 
 function startVideo() {
